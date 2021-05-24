@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600&display=swap');
 
+//reset
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
 //colors
 $prim-green: #014E56
 $prim-coral: #F67E7E
@@ -53,6 +59,12 @@ $font-livvic: 'Livvic', sans-serif //thin 100
     line-height: 25px
     font-weight: 600
 
+@mixin flex-center($direction,$justify)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: center
+    
 //buttons
     
 //input
