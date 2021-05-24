@@ -1,31 +1,69 @@
 @import '../styles/_config'
-
+.burger_menu-container
+  background-color: $prim-green
+  padding: 40px 20px
 .ham
   position: fixed
   z-index: 100
-  top: 0
-  right: 0
+  top: 40px
+  right: 15px
   width: 40px
   height: 40px
-  border: black solid 1px
-  background: white
+  border: transparent
+  background: transparent
   cursor: pointer
+  color: $prim-white
 .xIcon
     display: none
+    top: 30px
+    position: absolute
+    right: 30px
+    color: $prim-white
 .menu 
   position: fixed
   top: 0
-  left: 0
   right: 0
-  bottom: 0
   width: 100%
   height: 100vh
-  background: black
+  background-color: $secondary-blue_police
   color: white
   transform: translateX(100%)
   transition: transform 0.2s
   list-style: none
-  padding-top: 4rem
-
+  padding: 100px 0 0 20px
+  svg
+    position: absolute
+    bottom: 400px
+  li,button
+    margin: 30px 0 0 20px
+    color: $prim-white
+    @include paragraph-big($font-livvic)
+  a
+    text-decoration: none
+    color: $prim-white
+    display: inline-block
+    position: relative
+    &:hover::after
+      width: 100%
+      right: 0
+    &::after
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      right: 0
+      position: absolute
+      background: $prim-white
+      transition: width 1s ease 0s, right 0.5s ease 0s
+      width: 0 
+  button
+    padding: 6px
+    width: 150px
+    border-radius: 50px
+    border: 2px solid $prim-white
+    background-color: $secondary-blue_police
+    &:hover
+      background-color: $prim-white
+      color: #000000
 .showMenu
-  transform: translateX(50%)
+  transform: translateX(20%)
