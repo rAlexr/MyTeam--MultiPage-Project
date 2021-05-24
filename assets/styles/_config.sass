@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600&display=swap');
+
+//colors
+$prim-green: #014E56
+$prim-coral: #F67E7E
+$prim-white: #FFFFFF
+
+$secondary-blue_rapture: #79c8c7
+$secondary-blue_police: #2c6269
+$secondary-blue_jungle: #004047
+$secondary-green_state: #012f34
+$secondary-green_dark: #002529
+
+//tipography
+$font-livvic: 'Livvic', sans-serif //thin 100
+
+//h1 - h3
+@mixin title-xxl($font-family)
+    font-family: $font-family
+    font-size: 100px
+    line-height: 100px
+    font-weight: 900
+
+@mixin title-xl($font-family)
+    font-family: $font-family
+    font-size: 64px
+    line-height: 56px
+    font-weight: 900
+
+@mixin title-small($font-family)
+    font-family: $font-family
+    font-size: 48px
+    line-height: 48px
+    font-weight: 900
+
+@mixin title-h3($font-family)
+    font-family: $font-family
+    font-size: 18px
+    line-height: 28px
+    font-weight: 900
+
+//paragraph
+@mixin paragraph-big($font-family)
+    font-family: $font-family
+    font-size: 18px
+    line-height: 28px
+    font-weight: 600
+
+@mixin paragraph-small($font-family)
+    font-family: $font-family
+    font-size: 15px
+    line-height: 25px
+    font-weight: 600
+
+//buttons
+    
+//input
+
+//media query's
+@mixin media-sm 
+    @media screen and ( min-width: 768px) 
+        @content
+
+@mixin media-md 
+    @media screen and ( min-width: 1024px) 
+        @content
+
+@mixin media-lg 
+    @media screen and ( min-width: 1440px) 
+        @content
+
+@mixin media-xl 
+    @media screen and ( min-width: 768px) 
+        @content

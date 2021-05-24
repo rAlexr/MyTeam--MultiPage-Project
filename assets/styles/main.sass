@@ -1,2 +1,13 @@
+@import '_config'
+@import '_box'
+    
 *
     box-sizing: border-box
+
+h1
+    @include title-xxl($font-livvic)
+p
+    @include paragraph-big($font-livvic)
+
+.special2
+    @use'box'
