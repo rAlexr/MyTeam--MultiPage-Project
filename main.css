@@ -248,16 +248,28 @@ section .section_text-container {
 }
 
 .review_container {
+  padding: 140px 30px 100px 30px;
   position: relative;
   background-color: #014E56;
   color: #FFFFFF;
-  padding: 50px 30px 10px 30px;
 }
 
-.review_container svg {
+.review_container .svg5_container {
+  height: 50px;
+  background-color: red;
+}
+
+.review_container .top_svg {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.review_container .bottom_svg {
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .review_container h1 {
@@ -273,6 +285,10 @@ section .section_text-container {
 
 .review_container span {
   color: #79c8c7;
+}
+
+.review_text-container {
+  margin: 25px 0 40px 0;
 }
 
 .review_text-container .review_cell {

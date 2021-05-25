@@ -21,8 +21,6 @@ header
         p
         text-align: center
         @include paragraph-small($font-livvic)
-    svg
-        
 
 section
     position: relative
@@ -68,15 +66,24 @@ section
         width: 26%
 
 .review_container
-    100px 30px 10px 30px
+    padding: 140px 30px 100px 30px
     position: relative
-    svg
+    background-color: $prim-green
+    color: $prim-white
+    .svg5_container
+        height: 50px
+        background-color: red
+        .review_svg_botom
+          pos
+    .top_svg
         position: absolute
         top: 0
         left: 0
-    background-color: $prim-green
-    color: $prim-white
-    padding: 50px 30px 10px 30px
+    .bottom_svg
+        width: 45%
+        position: absolute
+        bottom: 0
+        right: 0
     h1
        @include title-small($font-livvic)
        margin: 50px 0 50px 0
@@ -86,6 +93,7 @@ section
     span
         color: $secondary-blue_rapture
 .review_text-container
+    margin: 25px 0 40px 0
     .review_cell
         p
         @include paragraph-small($font-livvic)
