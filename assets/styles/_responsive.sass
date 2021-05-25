@@ -1,5 +1,7 @@
 @import '_config'
 
+
+//320px - 425px
 @include media-xsm
     section
         .section_icons-container
@@ -11,3 +13,67 @@
         .footer_mobile
         svg
             width: 40%
+
+//768px
+@include media-sm
+    .burger_menu-container
+        display: none
+    nav
+        @include flex-center(row, center)
+        
+        background-color: $prim-green
+        padding: 50px 20px    
+        .logo_link-container
+            padding: 0 100px 0 0
+            display: flex
+            ul
+                @include flex-center(row, center)
+                list-style: none
+                a
+                    color: $prim-white
+                    text-decoration: none
+                    font-family: $font-livvic
+                    display: inline-block
+                    position: relative
+                    width: 27%
+                    &:hover::after
+                        width: 100%
+                        right: 0
+                    &::after
+                        bottom: 0
+                        content: ""
+                        display: block
+                        height: 2px
+                        right: 0
+                        position: absolute
+                        background: $prim-white
+                        transition: width 1s ease 0s, right 0.5s ease 0s
+                        width: 0     
+        button
+            width: 30%
+            height: 40px
+            background-color: $prim-green
+            border-radius: 50px
+            border: 2px solid $prim-white
+            color: $prim-white
+            font-family: $font-livvic
+            font-weight: 600
+            &:hover
+                background-color: $prim-white
+                color: $prim-green
+    header
+        padding: 50px 150px 150px 150px
+        position: relative
+        .title_container
+            margin: 20px 0 20px 0
+            h1
+            font-size: 2.1rem
+            line-height: 3.4rem
+        svg
+            position: absolute
+            bottom: 0
+            width: 50%
+
+section
+    .section_icons-container
+        display: none

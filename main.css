@@ -128,6 +128,10 @@
           transform: translateX(20%);
 }
 
+nav {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,5 +474,106 @@ footer .footer_copyright_mobile {
   footer svg {
     width: 40%;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .burger_menu-container {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #014E56;
+    padding: 50px 20px;
+  }
+  nav .logo_link-container {
+    padding: 0 100px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .logo_link-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  nav .logo_link-container ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Livvic", sans-serif;
+    display: inline-block;
+    position: relative;
+    width: 27%;
+  }
+  nav .logo_link-container ul a:hover::after {
+    width: 100%;
+    right: 0;
+  }
+  nav .logo_link-container ul a::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: #FFFFFF;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
+  nav button {
+    width: 30%;
+    height: 40px;
+    background-color: #014E56;
+    border-radius: 50px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+  }
+  nav button:hover {
+    background-color: #FFFFFF;
+    color: #014E56;
+  }
+  header {
+    padding: 50px 150px 150px 150px;
+    position: relative;
+  }
+  header .title_container {
+    margin: 20px 0 20px 0;
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+  }
+  header svg {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+  }
+}
+
+section .section_icons-container {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
