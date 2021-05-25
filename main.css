@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -53,6 +54,7 @@
 
 .menu {
   position: fixed;
+  z-index: 99;
   top: 0;
   right: 0;
   width: 100%;
@@ -71,7 +73,7 @@
 
 .menu svg {
   position: absolute;
-  bottom: 400px;
+  bottom: 300px;
 }
 
 .menu li, .menu button {
@@ -194,7 +196,7 @@ section .section_text-container {
 }
 
 .section_icons-container {
-  padding: 50px 0 0 0;
+  padding: 50px 0 10px 0;
   text-align: center;
 }
 
@@ -212,6 +214,7 @@ section .section_text-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 50px 0;
   font-family: "Livvic", sans-serif;
   font-size: 15px;
   line-height: 25px;
@@ -219,8 +222,31 @@ section .section_text-container {
   color: #FFFFFF;
 }
 
+.section_icons-container .title_coral {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #F67E7E;
+  margin: 10px 0;
+}
+
 .section_icons-container .icon_super_cell {
   margin: auto;
-  width: 30%;
+  width: 24%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+  section .section_icons-container .icon_cell .icon_super_cell {
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

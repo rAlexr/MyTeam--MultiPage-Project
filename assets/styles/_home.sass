@@ -1,0 +1,57 @@
+@import '_config'
+@import '../components/_nav'
+@import '../components/_burgerMenu'
+
+
+header
+    @include flex-center(column,center)
+    background-color: $prim-green
+    color: $prim-white
+    padding: 40px 20px 0 20px
+    .title_container
+        margin: 0 0 15px 0
+        h1
+        @include title-h3($font-livvic)
+        text-align: center
+        padding: 0 30px
+        span
+            color: $prim-coral
+    .text_container
+        margin: 0 0 100px 0
+        p
+        text-align: center
+        @include paragraph-small($font-livvic)
+
+section
+    position: relative
+    padding: 70px 20px 0 20px
+    text-align: center
+    background-color: $secondary-green_state
+    .special_svg
+        position: absolute
+        width: 27%
+        top: 0
+        right: 0
+    .section_text-container
+        h1
+        @include title-h3($font-livvic)
+        color: $prim-white
+        line-height: 2rem
+        text-align: left
+        width: 70%
+.section_icons-container
+    padding: 50px 0 10px 0
+    text-align: center
+    .icon_cell
+        @include flex-center(column, center)
+        margin: 0 0 50px 0
+        p
+        @include paragraph-small($font-livvic)
+        color: $prim-white
+    .title_coral
+        @include paragraph-big($font-livvic)
+        color: $prim-coral
+        margin: 10px 0
+    .icon_super_cell
+        margin: auto
+        width: 24%
