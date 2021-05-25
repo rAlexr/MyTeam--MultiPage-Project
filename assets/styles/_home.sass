@@ -88,7 +88,6 @@ section
        @include title-small($font-livvic)
        margin: 50px 0 50px 0
        line-height: 2rem
-       font-size: 2rem
        text-align: center
     span
         color: $secondary-blue_rapture
@@ -111,4 +110,32 @@ section
         font-size: 0.7rem
         font-style: italic
         margin: 20px 0 0 0
+
+.home_contact-message-container
+    @include flex-center(column,center)
+    text-align: center
+    height: 400px
+    background-color: $prim-coral
+    position: relative
+    h1
+    @include title-small($font-livvic)
+    font-size: 1.5rem
+    color: $secondary-blue_jungle
+    button
+        margin: 25px 0 0 0
+        width: 50%
+        padding: 15px
+        border-radius: 50px
+        border: 2px solid $secondary-blue_jungle
+        color: $secondary-blue_jungle
+        background-color: $prim-coral
+        font-family: $font-livvic
+        font-weight: 800
+        &:hover
+            background-color: $secondary-blue_jungle
+            color: $prim-coral
+    .contact_svg
+        position: absolute
+        bottom: 0
+        left: 0
         

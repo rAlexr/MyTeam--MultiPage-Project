@@ -274,12 +274,11 @@ section .section_text-container {
 
 .review_container h1 {
   font-family: "Livvic", sans-serif;
-  font-size: 48px;
+  font-size: 2rem;
   line-height: 48px;
   font-weight: 900;
   margin: 50px 0 50px 0;
   line-height: 2rem;
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -319,6 +318,55 @@ section .section_text-container {
   font-size: 0.7rem;
   font-style: italic;
   margin: 20px 0 0 0;
+}
+
+.home_contact-message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 400px;
+  background-color: #F67E7E;
+  position: relative;
+  font-family: "Livvic", sans-serif;
+  font-size: 2rem;
+  line-height: 48px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #004047;
+}
+
+.home_contact-message-container button {
+  margin: 25px 0 0 0;
+  width: 50%;
+  padding: 15px;
+  border-radius: 50px;
+  border: 2px solid #004047;
+  color: #004047;
+  background-color: #F67E7E;
+  font-family: "Livvic", sans-serif;
+  font-weight: 800;
+}
+
+.home_contact-message-container button:hover {
+  background-color: #004047;
+  color: #F67E7E;
+}
+
+.home_contact-message-container .contact_svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 * {
