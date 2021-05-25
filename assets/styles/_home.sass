@@ -4,6 +4,7 @@
 
 nav
     display: none
+
 header
     @include flex-center(column,center)
     background-color: $prim-green
@@ -23,48 +24,20 @@ header
         text-align: center
         @include paragraph-small($font-livvic)
 
-section
+.section_icons-container
+    padding: 100px 80px
     position: relative
-    padding: 70px 20px 0 20px
-    text-align: center
     background-color: $secondary-green_state
+    color: $prim-white
     &::before
         content: ''
         position: absolute
-        top: 30px
-        left: 20px
-        width: 30%
+        top: 110px
+        left: 80px
+        width: 10%
         height: 5px
         background-color: #F67E7E
         border-radius: 20px
-    .special_svg
-        position: absolute
-        width: 28%
-        top: 0
-        right: 0
-    .section_text-container
-        h1
-        @include title-h3($font-livvic)
-        color: $prim-white
-        line-height: 2rem
-        text-align: left
-        width: 70%
-.section_icons-container
-    padding: 50px 0 10px 0
-    text-align: center
-    .icon_cell
-        @include flex-center(column, center)
-        margin: 0 0 50px 0
-        p
-        @include paragraph-small($font-livvic)
-        color: $prim-white
-    .title_coral
-        @include paragraph-big($font-livvic)
-        color: $prim-coral
-        margin: 10px 0
-    .icon_super_cell
-        margin: auto
-        width: 26%
 
 .review_container
     padding: 140px 30px 100px 30px

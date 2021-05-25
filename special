@@ -1,0 +1,46 @@
+.section_icons-container
+    padding: 100px 80px 40px 80px
+    position: relative
+    background-color: $secondary-green_state
+    color: $prim-white
+    &::before
+        content: ''
+        position: absolute
+        top: 110px
+        left: 80px
+        width: 10%
+        height: 5px
+        background-color: #F67E7E
+        border-radius: 20px
+    .responsive_section_icon
+        position: absolute
+        right: 0
+        top: 0
+        width: 13%
+    .section_title-container
+        h1
+        @include title-h3($font-livvic)
+        font-size: 1.2rem
+        text-align: left
+        line-height: 2.2rem
+        margin: 30px 0 0 0
+.responsive_icons-container
+    padding: 40px 0
+    .responsive_svg_text-container
+        display: flex
+        padding: 20px 45px
+        .responsive_svg_cell
+            flex: 2
+        .responsive_text_cell
+            flex: 8
+            p
+                text-align: left
+            .responsive_firs_para
+                @include paragraph-small($font-livvic)
+                font-weight: 500
+                color: $prim-coral
+                margin: 0 0 20px 0
+            .responsive_second_para
+                @include paragraph-small($font-livvic)
+                font-weight: 500
+                line-height: 1.4rem

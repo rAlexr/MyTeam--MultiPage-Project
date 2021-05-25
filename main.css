@@ -174,81 +174,22 @@ header .text_container {
   font-weight: 400;
 }
 
-section {
+.section_icons-container {
+  padding: 100px 80px;
   position: relative;
-  padding: 70px 20px 0 20px;
-  text-align: center;
   background-color: #012f34;
+  color: #FFFFFF;
 }
 
-section::before {
+.section_icons-container::before {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 20px;
-  width: 30%;
+  top: 110px;
+  left: 80px;
+  width: 10%;
   height: 5px;
   background-color: #F67E7E;
   border-radius: 20px;
-}
-
-section .special_svg {
-  position: absolute;
-  width: 28%;
-  top: 0;
-  right: 0;
-}
-
-section .section_text-container {
-  font-family: "Livvic", sans-serif;
-  font-size: 24px;
-  line-height: 50px;
-  font-weight: 500;
-  color: #FFFFFF;
-  line-height: 2rem;
-  text-align: left;
-  width: 70%;
-}
-
-.section_icons-container {
-  padding: 50px 0 10px 0;
-  text-align: center;
-}
-
-.section_icons-container .icon_cell {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 50px 0;
-  font-family: "Livvic", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-.section_icons-container .title_coral {
-  font-family: "Livvic", sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 600;
-  color: #F67E7E;
-  margin: 10px 0;
-}
-
-.section_icons-container .icon_super_cell {
-  margin: auto;
-  width: 26%;
 }
 
 .review_container {
@@ -468,11 +409,8 @@ footer .footer_copyright_mobile {
 }
 
 @media screen and (min-width: 375px) {
-  section .section_icons-container .icon_cell .icon_super_cell {
-    width: 22%;
-  }
   footer svg {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -571,9 +509,8 @@ footer .footer_copyright_mobile {
     bottom: 0;
     width: 50%;
   }
-}
-
-section .section_icons-container {
-  display: none;
+  .section_icons-container {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
