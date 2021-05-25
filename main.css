@@ -7,6 +7,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 * {
@@ -14,6 +15,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 * {
@@ -21,6 +23,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .burger_menu-container {
@@ -167,10 +170,6 @@ header .text_container {
   font-weight: 400;
 }
 
-header svg {
-  width: 110%;
-}
-
 section {
   position: relative;
   padding: 70px 20px 0 20px;
@@ -249,8 +248,16 @@ section .section_text-container {
 }
 
 .review_container {
+  position: relative;
   background-color: #014E56;
   color: #FFFFFF;
+  padding: 50px 30px 10px 30px;
+}
+
+.review_container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .review_container h1 {
@@ -258,6 +265,7 @@ section .section_text-container {
   font-size: 48px;
   line-height: 48px;
   font-weight: 900;
+  margin: 50px 0 50px 0;
   line-height: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -267,11 +275,42 @@ section .section_text-container {
   color: #79c8c7;
 }
 
+.review_text-container .review_cell {
+  font-family: "Livvic", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.review_text-container .review_cell span {
+  font-family: "Livvic", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.review_text-container img {
+  width: 20%;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  margin: 10px 0 0 0;
+}
+
+.review_text-container .review_name {
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 375px) {

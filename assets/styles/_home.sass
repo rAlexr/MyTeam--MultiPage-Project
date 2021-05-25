@@ -22,7 +22,7 @@ header
         text-align: center
         @include paragraph-small($font-livvic)
     svg
-        width: 110%
+        
 
 section
     position: relative
@@ -68,12 +68,39 @@ section
         width: 26%
 
 .review_container
+    100px 30px 10px 30px
+    position: relative
+    svg
+        position: absolute
+        top: 0
+        left: 0
     background-color: $prim-green
     color: $prim-white
+    padding: 50px 30px 10px 30px
     h1
        @include title-small($font-livvic)
+       margin: 50px 0 50px 0
        line-height: 2rem
        font-size: 2rem
        text-align: center
     span
         color: $secondary-blue_rapture
+.review_text-container
+    .review_cell
+        p
+        @include paragraph-small($font-livvic)
+        text-align: center
+        span
+         @include paragraph-small($font-livvic)
+         font-size: 1rem
+         font-weight: bold
+    img
+        width: 20%
+        border-radius: 50px
+        border: 2px solid #fff
+        margin: 10px 0 0 0 
+    .review_name
+        font-size: 0.7rem
+        font-style: italic
+        margin: 20px 0 0 0
+        
