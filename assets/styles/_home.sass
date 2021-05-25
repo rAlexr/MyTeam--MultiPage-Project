@@ -138,4 +138,51 @@ section
         position: absolute
         bottom: 0
         left: 0
-        
+footer
+    .footer_mobile
+    @include flex-center(column,center)
+    text-align: center
+    height: 400px
+    background-color: $secondary-green_dark
+    color: $prim-white
+    font-weight: 600
+    font-family: $font-livvic
+    svg
+        width: 50%
+    ul
+        display: flex
+        justify-content: space-evenly
+        padding: 0 20px
+        margin: 20px 0 20px 0 
+        list-style: none
+        a
+            width: 20%
+            text-decoration: none
+            color: $prim-white
+            text-decoration: none
+            display: inline-block
+            position: relative
+            &:hover::after
+                width: 100%
+                right: 0
+            &::after
+                bottom: 0
+                content: ""
+                display: block
+                height: 2px
+                right: 0
+                position: absolute
+                background: $prim-white
+                transition: width 1s ease 0s, right 0.5s ease 0s
+                width: 0 
+    .footer_txt_adress
+        color: #9c9a9a
+        margin: 15px 0 15px 0
+    .mobile_socials-container
+        width: 50%
+        display: flex
+        justify-content: space-evenly
+        padding: 0 0 0 20px
+        margin: 15px 0 15px 0
+    .footer_copyright_mobile
+        color: #9c9a9a

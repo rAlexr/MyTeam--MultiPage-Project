@@ -369,6 +369,92 @@ section .section_text-container {
   left: 0;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 400px;
+  background-color: #002529;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Livvic", sans-serif;
+}
+
+footer svg {
+  width: 50%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 20px;
+  margin: 20px 0 20px 0;
+  list-style: none;
+}
+
+footer ul a {
+  width: 20%;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+footer ul a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+footer ul a::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  right: 0;
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+  transition: width 1s ease 0s, right 0.5s ease 0s;
+  width: 0;
+}
+
+footer .footer_txt_adress {
+  color: #9c9a9a;
+  margin: 15px 0 15px 0;
+}
+
+footer .mobile_socials-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 0 0 20px;
+  margin: 15px 0 15px 0;
+}
+
+footer .footer_copyright_mobile {
+  color: #9c9a9a;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -380,6 +466,9 @@ section .section_text-container {
 @media screen and (min-width: 375px) {
   section .section_icons-container .icon_cell .icon_super_cell {
     width: 22%;
+  }
+  footer svg {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */
