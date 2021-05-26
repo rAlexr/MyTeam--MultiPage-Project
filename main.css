@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,20 +7,8 @@
   width: 100%;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+h1, h2, h3, p {
+  font-family: 'Livvic', sans-serif;
 }
 
 .burger_menu-container {
@@ -79,10 +64,6 @@
 .menu li, .menu button {
   margin: 30px 0 0 20px;
   color: #FFFFFF;
-  font-family: "Livvic", sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 600;
 }
 
 .menu a {
@@ -128,6 +109,148 @@
           transform: translateX(20%);
 }
 
+@media screen and (min-width: 768px) {
+  .burger_menu-container {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-color: #014E56;
+    padding: 40px;
+  }
+  .logo_link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 0 200px 0 0;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 0 0 15px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Livvic", sans-serif;
+    display: inline-block;
+    position: relative;
+  }
+  ul li a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  ul li a::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #FFFFFF;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
+  button {
+    width: 30%;
+    border-radius: 50px;
+    background-color: #014E56;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+  }
+  button:hover {
+    background-color: #FFFFFF;
+    color: #014E56;
+  }
+  .burger_menu-container {
+    display: none;
+  }
+  header {
+    padding: 0 200px;
+  }
+  .title_container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+  }
+  header svg {
+    position: absolute;
+    bottom: 1px;
+    width: 35%;
+  }
+  .logo_link-container svg {
+    width: 33%;
+  }
+  li {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo_link-container svg {
+    width: 25%;
+  }
+  li {
+    width: 10%;
+  }
+  button {
+    width: 15%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    padding: 50px 200px;
+    height: 700px;
+  }
+  header .title_container {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  header .title_container h1 {
+    font-size: 5rem;
+    line-height: 3.8rem;
+    padding: 0 0 50px 0;
+  }
+  header .text_container {
+    margin: 0;
+    text-align: left;
+  }
+}
+
 nav {
   display: none;
 }
@@ -153,10 +276,6 @@ header {
 
 header .title_container {
   margin: 0 0 15px 0;
-  font-family: "Livvic", sans-serif;
-  font-size: 24px;
-  line-height: 50px;
-  font-weight: 500;
   text-align: center;
   padding: 0 30px;
 }
@@ -168,10 +287,8 @@ header .title_container span {
 header .text_container {
   margin: 0 0 100px 0;
   text-align: center;
-  font-family: "Livvic", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 .section_icons-container {
@@ -218,10 +335,6 @@ header .text_container {
 }
 
 .review_container h1 {
-  font-family: "Livvic", sans-serif;
-  font-size: 2rem;
-  line-height: 48px;
-  font-weight: 900;
   margin: 50px 0 50px 0;
   line-height: 2rem;
   text-align: center;
@@ -236,18 +349,10 @@ header .text_container {
 }
 
 .review_text-container .review_cell {
-  font-family: "Livvic", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
   text-align: center;
 }
 
 .review_text-container .review_cell span {
-  font-family: "Livvic", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -283,10 +388,6 @@ header .text_container {
   height: 400px;
   background-color: #F67E7E;
   position: relative;
-  font-family: "Livvic", sans-serif;
-  font-size: 2rem;
-  line-height: 48px;
-  font-weight: 900;
   font-size: 1.5rem;
   color: #004047;
 }
@@ -400,20 +501,6 @@ footer .footer_copyright_mobile {
   color: #9c9a9a;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-@media screen and (min-width: 375px) {
-  footer svg {
-    width: 50%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .burger_menu-container {
     display: none;
@@ -422,95 +509,137 @@ footer .footer_copyright_mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     background-color: #014E56;
-    padding: 50px 20px;
+    padding: 40px;
   }
-  nav .logo_link-container {
-    padding: 0 100px 0 0;
+  .logo_link-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  nav .logo_link-container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  nav .logo_link-container ul a {
-    color: #FFFFFF;
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 0 200px 0 0;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 0 0 15px;
+  }
+  ul li a {
     text-decoration: none;
+    color: #FFFFFF;
     font-family: "Livvic", sans-serif;
     display: inline-block;
     position: relative;
-    width: 27%;
   }
-  nav .logo_link-container ul a:hover::after {
+  ul li a:hover::after {
     width: 100%;
-    right: 0;
+    left: 0;
   }
-  nav .logo_link-container ul a::after {
+  ul li a::after {
     bottom: 0;
     content: "";
     display: block;
     height: 2px;
-    right: 0;
+    left: 0;
     position: absolute;
     background: #FFFFFF;
     -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
     transition: width 1s ease 0s, right 0.5s ease 0s;
     width: 0;
   }
-  nav button {
+  button {
     width: 30%;
-    height: 40px;
-    background-color: #014E56;
     border-radius: 50px;
-    border: 2px solid #FFFFFF;
+    background-color: #014E56;
     color: #FFFFFF;
-    font-family: "Livvic", sans-serif;
-    font-weight: 600;
+    border: 2px solid #FFFFFF;
   }
-  nav button:hover {
+  button:hover {
     background-color: #FFFFFF;
     color: #014E56;
   }
-  header {
-    padding: 50px 150px 150px 150px;
-    position: relative;
+  .burger_menu-container {
+    display: none;
   }
-  header .title_container {
-    margin: 20px 0 20px 0;
-    font-size: 2.1rem;
-    line-height: 3.4rem;
+  header {
+    padding: 0 200px;
+  }
+  .title_container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
   }
   header svg {
     position: absolute;
-    bottom: 0;
-    width: 50%;
+    bottom: 1px;
+    width: 35%;
   }
-  .section_icons-container {
+  .logo_link-container svg {
+    width: 33%;
+  }
+  li {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo_link-container svg {
+    width: 25%;
+  }
+  li {
+    width: 10%;
+  }
+  button {
+    width: 15%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
+    padding: 50px 200px;
+    height: 700px;
+  }
+  header .title_container {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  header .title_container h1 {
+    font-size: 5rem;
+    line-height: 3.8rem;
+    padding: 0 0 50px 0;
+  }
+  header .text_container {
+    margin: 0;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

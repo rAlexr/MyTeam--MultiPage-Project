@@ -1,71 +1,103 @@
-@import '_config'
-
-
-//320px - 425px
-@include media-xsm
-    footer
-        .footer_mobile
-        svg
-            width: 50%
-
-//768px
+//768
 @include media-sm
     .burger_menu-container
         display: none
     nav
-        @include flex-center(row, center)
-        
+        display: flex
+        justify-content: flex-start
         background-color: $prim-green
-        padding: 50px 20px    
-        .logo_link-container
-            padding: 0 100px 0 0
-            display: flex
-            ul
-                @include flex-center(row, center)
-                list-style: none
-                a
-                    color: $prim-white
-                    text-decoration: none
-                    font-family: $font-livvic
-                    display: inline-block
-                    position: relative
-                    width: 27%
-                    &:hover::after
-                        width: 100%
-                        right: 0
-                    &::after
-                        bottom: 0
-                        content: ""
-                        display: block
-                        height: 2px
-                        right: 0
-                        position: absolute
-                        background: $prim-white
-                        transition: width 1s ease 0s, right 0.5s ease 0s
-                        width: 0     
-        button
-            width: 30%
-            height: 40px
-            background-color: $prim-green
-            border-radius: 50px
-            border: 2px solid $prim-white
-            color: $prim-white
-            font-family: $font-livvic
-            font-weight: 600
-            &:hover
-                background-color: $prim-white
-                color: $prim-green
+        padding: 40px
+    .logo_link-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    ul
+        display: flex
+        text-align: center
+        padding: 0 200px 0 0
+        li
+            list-style: none
+            margin: 0 0 0 15px
+            a
+                text-decoration: none
+                color: $prim-white
+                font-family: $font-livvic
+                display: inline-block
+                position: relative
+                &:hover::after
+                    width: 100%
+                    left: 0
+                &::after
+                    bottom: 0
+                    content: ""
+                    display: block
+                    height: 2px
+                    left: 0
+                    position: absolute
+                    background: $prim-white
+                    transition: width 1s ease 0s, right 0.5s ease 0s
+                    width: 0 
+    button
+        width: 30%
+        border-radius: 50px
+        background-color: $prim-green
+        color: $prim-white
+        border: 2px solid $prim-white
+        &:hover
+            background-color: $prim-white
+            color: $prim-green
+    .burger_menu-container
+        display: none 
     header
-        padding: 50px 150px 150px 150px
+        padding: 0 200px
+    .title_container
+        h1
+            font-size: 3rem
+    .text_container
+        p    
+
+//1024
+@include media-md
+    header
         position: relative
-        .title_container
-            margin: 20px 0 20px 0
-            h1
-            font-size: 2.1rem
-            line-height: 3.4rem
         svg
             position: absolute
-            bottom: 0
-            width: 50%
-    .section_icons-container
+            bottom: 1px
+            width: 35%
+
+    .logo_link-container
+        svg
+            width: 33%
+    li
+        width: 30%
+
+//1440
+@include media-lg
+    .logo_link-container
+        svg
+            width: 25%
+    li
+        width: 10%
+    button
+        width: 15%
+    header
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
         padding: 0
+
+        padding: 50px 200px
+        height: 700px
+        .title_container
+            margin: 0
+            padding: 0
+            text-align: left
+            h1
+                font-size: 5rem
+                line-height: 3.8rem
+                padding: 0 0 50px 0
+        .text_container
+            margin: 0
+            text-align: left
+            

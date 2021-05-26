@@ -1,6 +1,6 @@
-@import '_config'
-@import '../components/_nav'
 @import '../components/_burgerMenu'
+@import './_responsive'
+
 
 nav
     display: none
@@ -13,7 +13,6 @@ header
     .title_container
         margin: 0 0 15px 0
         h1
-        @include title-h3($font-livvic)
         text-align: center
         padding: 0 30px
         span
@@ -22,7 +21,8 @@ header
         margin: 0 0 100px 0
         p
         text-align: center
-        @include paragraph-small($font-livvic)
+        font-size: 1rem
+        line-height: 1.7rem
 
 .section_icons-container
     padding: 100px 80px
@@ -59,7 +59,6 @@ header
         bottom: 0
         right: 0
     h1
-       @include title-small($font-livvic)
        margin: 50px 0 50px 0
        line-height: 2rem
        text-align: center
@@ -69,10 +68,8 @@ header
     margin: 25px 0 40px 0
     .review_cell
         p
-        @include paragraph-small($font-livvic)
         text-align: center
         span
-         @include paragraph-small($font-livvic)
          font-size: 1rem
          font-weight: bold
     img
@@ -92,7 +89,6 @@ header
     background-color: $prim-coral
     position: relative
     h1
-    @include title-small($font-livvic)
     font-size: 1.5rem
     color: $secondary-blue_jungle
     button
