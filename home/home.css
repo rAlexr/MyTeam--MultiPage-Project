@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+
+    --color-prim-green: #014E56;
+    --color-prim-coral: #F67E7E;
+    --color-prim-white: #FFFFFF;
+    
+    --color-secondary-blue_rapture: #79c8c7;
+    --color-secondary-blue_police: #2c6269;
+    --color-secondary-blue_jungle: #004047;
+    --color-secondary-green_state: #012f34;
+    --color-secondary-green_dark: #002529;
+}
+
+.grid-container {
+    background-color: #014E56;
+    display: grid;
+    grid-template-columns: 0.3fr 1.4fr 1.4fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr 0.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "empty-first hero-title hero-text empty-second"
+      "empty-first main-title main-icons empty-second"
+      "empty-first section-reviews section-reviews empty-second"
+      "call-to-action call-to-action call-to-action call-to-action"
+      "footer footer footer footer";
+  }
+  
+  .empty-first { 
+      grid-area: empty-first;
+      width: 100%;
+      
+    }
+  
+  .empty-second { 
+      grid-area: empty-second;
+      width: 100%; 
+    }
+  
+  .hero-title { 
+      grid-area: hero-title; 
+      width: 100%;
+    }
+  
+  .hero-text { 
+      grid-area: hero-text;
+      width: 100%;
+     }
+  
+  .main-title { 
+      grid-area: main-title; 
+      width: 100%;
+    }
+  
+  .main-icons { 
+      grid-area: main-icons; 
+      width: 100%;
+    }
+  
+  .section-reviews {
+    display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". icon-1 ."
+      ". icon-1 .";
+    grid-area: section-reviews;
+  }
+  
+  .icon-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "rev-icon-1 rev-icon-2 rev-icon-3"
+      "rev-icon-1 rev-icon-2 rev-icon-3";
+    grid-area: icon-1;
+  }
+  
+  .rev-icon-1 { grid-area: rev-icon-1; }
+  
+  .rev-icon-2 { grid-area: rev-icon-2; }
+  
+  .rev-icon-3 { grid-area: rev-icon-3; }
+  
+  .call-to-action { grid-area: call-to-action; }
+  
+  .footer { grid-area: footer; }
+  
