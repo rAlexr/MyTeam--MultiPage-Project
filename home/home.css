@@ -324,6 +324,9 @@ ul svg {
 
 /* 768px */
 @media screen and (min-width: 768px) {
+  .menu-wrap {
+    display: none;
+  }
   .hero__title h1 {
     margin: auto;
     width: 70%;
@@ -446,7 +449,7 @@ ul svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0rem 11rem 9rem 2rem;
+    padding: 15rem 11rem 0rem 2rem;
   }
 
   .hero__text::before {
@@ -506,48 +509,7 @@ ul svg {
     top: 45rem;
   }
 }
-/* 2560 */
-@media screen and (min-width: 2560px ) {
-  .hero__title svg {
-    left: 1rem;
-    top: 24rem;
-  }
-  .hero__title h1 {
-    padding: 1rem 0 0 16rem;
-    font-size: 17rem;
-    line-height: 16rem;
-  }
-  .hero__text p {
-    font-size: 3.6rem;
-    padding: 0;
-    width: 75%;
-    font-weight: 500;
-    line-height: 5rem;
-  }
-  .hero__text::before {
-    left: 17rem;
-    width: 7rem;
-    height: 8px;
-  }
-  .main__title h1 {
-    font-size: 9rem;
-    line-height: 9rem;
-  }
-  .main__title {
-    padding: 18rem 7rem 0 27rem;
-  }
-  .main__title svg {
-    width: 16%;
-    right: -127rem;
-  }
-  .main__cell-container p {
-    font-size: 3rem;
-  }
-  .main__title::after {
-    left: 28rem;
-  }
-}
-
+/* 1880 */
 @media screen and (min-width: 1880px ) {
   .hero__title {
     padding: 6rem 0 0 21rem;
@@ -564,5 +526,49 @@ ul svg {
   }
   .main__title svg {
     right: -98rem;
+  }
+}
+/* 2560 */
+@media screen and (min-width: 2560px ) {
+  .hero__title svg {
+    left: 1rem;
+    top: 24rem;
+  }
+  .hero__title h1 {
+    padding: 1rem 0 11rem 4rem;
+    font-size: 17rem;
+    line-height: 16rem;
+  }
+  .hero__text p {
+    font-size: 3.6rem;
+    padding: 0;
+    width: 75%;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  .hero__text::before {
+    top: 26rem;
+    left: 16rem;
+    width: 7rem;
+    height: 8px;
+  }
+
+  .main__title h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+  .main__title {
+    padding: 18rem 7rem 0 27rem;
+  }
+  .main__title svg {
+    width: 16%;
+    right: -127rem;
+    
+  }
+  .main__cell-container p {
+    font-size: 3rem;
+  }
+  .main__title::after {
+    left: 28rem;
   }
 }
