@@ -238,7 +238,7 @@ html {
     justify-items: center;
     align-items: center;
     position: relative;
-    padding: 5rem 0 0 6rem;
+    padding: 5rem 0 0 9rem;
   }
   .hero__title svg {
     display: initial;
@@ -250,7 +250,7 @@ html {
     width: 90%;
     padding: 0rem 0 4rem 4rem;
     font-size: 10rem;
-    line-height: 13rem;
+    line-height: 9rem;
   }
   .hero__text {
     height: 70rem;
@@ -258,13 +258,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0rem 11rem 9rem 2rem;
   }
 
   .hero__text::before {
     content: "";
     position: absolute;
-    top: 32rem;
-    left: 12rem;
+    top: 30rem;
+    left: 10rem;
     width: 5rem;
     height: 6px;
     background-color: var(--color-secondary-blue_rapture);
@@ -356,5 +357,24 @@ html {
   }
   .main__title::after {
     left: 28rem;
+  }
+}
+
+@media screen and (min-width: 1880px ) {
+  .hero__title {
+    padding: 6rem 0 0 21rem;
+  }
+  .hero__title svg {
+    left: 5px;
+    top: 24rem;
+  }
+  .hero__text p {
+    padding: 7rem 5rem 7rem 2rem;
+  }
+  .hero__text::before {
+    left: 14rem;
+  }
+  .main__title svg {
+    right: -94rem;
   }
 }
