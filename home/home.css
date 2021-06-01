@@ -137,6 +137,16 @@ html {
     position: relative;
     height: 45rem;
   }
+
+  .hero__text::before {
+    content: "";
+    position: absolute;
+    top: 13rem;
+    left: 40px;
+    width: 5rem;
+    height: 6px;
+    background-color: var(--color-secondary-blue_rapture);
+}
   .hero__text svg {
     position: absolute;
     bottom: 0;
@@ -178,6 +188,17 @@ html {
     align-items: center;
     justify-content: center;
   }
+
+  .hero__text::before {
+    content: "";
+    position: absolute;
+    top: 32rem;
+    left: 12rem;
+    width: 5rem;
+    height: 6px;
+    background-color: var(--color-secondary-blue_rapture);
+}
+
   .hero__text p {
     font-size: 2.3rem;
     padding: 7rem 1rem 7rem 1rem;
@@ -207,5 +228,10 @@ html {
     width: 75%;
     font-weight: 500;
     line-height: 5rem;
-}
+  }
+  .hero__text::before {
+    left: 17rem;
+    width: 7rem;
+    height: 8px;
+  }
 }
