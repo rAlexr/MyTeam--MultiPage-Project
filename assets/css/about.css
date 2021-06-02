@@ -1,0 +1,22 @@
+body {
+    width: initial;
+}
+
+.hero__container {
+    background-color: var(--color-prim-green);
+    padding-top: 3rem;
+    position: relative;
+}
+
+.hero__container svg {
+    position: absolute;
+    bottom: -116px;
+    right: 0px;
+    width: 31%;
+}
+.hero__title {
+
+}
+.hero__text {
+
+}

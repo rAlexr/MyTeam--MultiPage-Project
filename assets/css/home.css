@@ -881,6 +881,9 @@ ul svg {
   .nav__container {
     padding: 4rem 30rem;
   }
+  .footer__copyright {
+    justify-self: self-end;
+}
 }
 /* 2560 */
 @media screen and (min-width: 2560px ) {
