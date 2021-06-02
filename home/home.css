@@ -11,7 +11,9 @@ h1,h2,h3,p {
 html {
   font-size: 62.5%; /*1 rem = 10px; 10px/16px = 62.5% */
 }
-
+body {
+  width: fit-content;
+}
 :root {
 
     --color-prim-green: #014E56;
@@ -25,6 +27,11 @@ html {
     --color-secondary-green_dark: #002529;
 
     --menu-speed: 0.75s;
+}
+
+.hero_logo-container {
+  background-color: var(--color-prim-green);
+  padding: 1rem;
 }
 
 .hero__title svg {
@@ -314,11 +321,198 @@ ul svg {
   width: 140%;
   margin-top: 3rem;
 }
+
+.reviews__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "first"
+  "second"
+  "third";
+
+  padding: 7rem 1rem 10rem 1rem;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--color-secondary-blue_jungle);
+}
+
+.reviews__container p {
+  font-size: 1.7rem;
+  color: var(--color-prim-white);
+}
+
+.rev__cell-container-1 {
+  grid-area: first;
+}
+
+.rev__cell-container-2 {
+  grid-area: second;
+}
+
+.rev__cell-container-3 {
+  grid-area: third;
+}
+
+.review__title-container {
+  position: relative;
+  background-color: var(--color-secondary-blue_jungle);
+  padding: 14rem 2rem 1rem 2rem;
+}
+.review__title-container h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    color: var(--color-prim-white);
+}
+.reviews__container img {
+  border-radius: 50px;
+  width: 5.5rem;
+  border: 2px solid white;
+}
+.rev_title {
+  color: var(--color-secondary-blue_rapture);
+}
+.rev_user-name {
+  font-size: 1.5rem!important;
+  color: var(--color-secondary-blue_rapture);
+  font-weight: bold;
+
+  margin-top: 1.5rem;
+}
+.rev_user-position {
+  font-size: 1.3rem!important;
+  font-style: italic;
+  color: #dedede;
+  margin-top: .2rem;
+  margin-bottom: 1.5rem;
+}
+.rev__cell-container-1,
+.rev__cell-container-2,
+.rev__cell-container-3 {
+  margin-bottom: 8rem;
+}
+.svg_rev-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg_rev-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cta__container {
+  position: relative;
+  height: 35rem;
+  padding: 6rem 8rem;
+  background-color: var(--color-prim-coral);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.svg_cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.cta__container h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: var(--color-secondary-green_state);
+  margin-bottom: 2rem;
+}
+
+.cta__container p a {
+  font-size: 1.7rem;
+  color: var(--color-secondary-green_state);
+  font-weight: bold;
+
+  text-decoration: none;
+  border: 2px solid var(--color-secondary-green_state);
+  border-radius: 50px;
+  padding: 1rem 4rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "logo"
+  "nav"
+  "txt"
+  "social"
+  "..."
+  "cpy";
+
+  background-color: var(--color-secondary-green_dark);
+  color: var(--color-prim-white);
+  justify-items: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.footer_logo-container {
+  grid-area: logo;
+}
+.footer__nav {
+  grid-area: nav;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: var(--color-prim-white);
+  font-family: 'Livvic', sans-serif;
+  font-size: 1.7rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+.footer__text{
+  grid-area: txt;
+}
+
+.footer__text p {
+  font-size: 1.7rem;
+  font-family: 'Livvic', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #979797;
+}
+
+.footer__socials-container {
+  grid-area: social;
+}
+.footer__socials-container svg {
+  margin: 1rem;
+}
+.footer__copyright {
+  grid-area: cpy;
+}
+.footer__copyright p {
+  font-size: 1.7rem;
+  color: #979797;
+  font-family: 'Livvic', sans-serif;
+  font-weight: 600;
+}
 /* 425 */
 @media screen and (min-width: 425px) {
     .hero__title h1 {
       width: 90%;
       font-size: 6rem;
+    }
+    .cta__container h1 {
+      font-size: 4.2rem;
     }
 }
 
@@ -356,6 +550,7 @@ ul svg {
   .main__title svg {
     width: 13%;
   }
+  
 }
 
 /* 1024px */
@@ -420,6 +615,12 @@ ul svg {
   .main__title::after {
     left: 14rem;
   }
+  .reviews__container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". first second third .";
 }
 /* 1440 */
 @media screen and (min-width: 1440px ) {
@@ -525,7 +726,7 @@ ul svg {
     left: 14rem;
   }
   .main__title svg {
-    right: -98rem;
+    right: -94rem;
   }
 }
 /* 2560 */
