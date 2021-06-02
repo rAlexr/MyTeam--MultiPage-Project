@@ -526,7 +526,41 @@ ul svg {
 
 /* 768px */
 @media screen and (min-width: 768px) {
-  .menu-wrap {
+  .nav__container {
+    background-color: var(--color-prim-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  .nav__logo-txt-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__logo-txt-container a{
+    margin-left: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+    color: var(--color-prim-white);
+    text-decoration: none;
+  }
+  
+  .nav_btn{
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+    color: var(--color-prim-white);
+    text-decoration: none;
+    border: 2px solid var(--color-prim-white);
+    border-radius: 50px;
+  }
+
+  .logo_burger-container {
     display: none;
   }
   .hero__title h1 {
@@ -579,6 +613,9 @@ ul svg {
 
 /* 1024px */
 @media screen and (min-width: 1024px ) {
+  .nav__container {
+    padding: 4rem;
+  }
   .hero__container {
     grid-template-columns: 1fr 1fr;
   }
@@ -657,6 +694,10 @@ ul svg {
 }
 /* 1440 */
 @media screen and (min-width: 1440px ) {
+  .nav__container {
+    padding: 4rem 17rem;
+  }
+
   .hero__title {
     height: 70rem;
     display: flex;
@@ -809,7 +850,10 @@ ul svg {
 
   .rev__cell-container-1, .rev__cell-container-2, .rev__cell-container-3 {
     padding: 0 7rem;
-}
+  }
+  .nav__container {
+    padding: 4rem 30rem;
+  }
 }
 /* 2560 */
 @media screen and (min-width: 2560px ) {
