@@ -29,12 +29,16 @@ body {
     --menu-speed: 0.75s;
 }
 
+.nav__container {
+  display: none;
+}
 .logo_burger-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-prim-green);
   padding: 1rem;
+  margin-bottom: -.1rem;
 }
 
 .hero__title svg {
