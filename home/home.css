@@ -29,10 +29,12 @@ body {
     --menu-speed: 0.75s;
 }
 
-.hero_logo-container {
+.logo_burger-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--color-prim-green);
   padding: 1rem;
-  margin-bottom: -1px;
 }
 
 .hero__title svg {
