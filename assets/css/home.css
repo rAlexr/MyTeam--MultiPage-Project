@@ -85,24 +85,25 @@ body {
 }
 
 .main__grid-container {
-  background-color: var(--color-secondary-green_dark);
+  background-color: var(--color-secondary-green_state);
   color: var(--color-prim-white);
 
   display: grid;
   grid-template-columns: 1fr;
+  padding: 6rem 2rem;
 }
 .main__title {
   position: relative;
   padding: 7.5rem 16rem 2.5rem 2.5rem;
-  background-color: var(--color-secondary-green_dark);
+  background-color: var(--color-secondary-green_state);
 }
 .main__title::after {
   content: "";
   position: absolute;
   top: 5rem;
   left: 3rem;
-  width: 5rem;
-  height: 6px;
+  width: 7rem;
+  height: 4px;
   background-color: var(--color-prim-coral);
 }
 
@@ -110,7 +111,7 @@ body {
     width: 24%;
     position: absolute;
     top: 0;
-    right: 0rem;
+    right: -2rem;
 }
 
 .main__title h1 {
@@ -357,6 +358,7 @@ ul svg {
 
 .reviews__container p {
   font-size: 1.7rem;
+  line-height: 3rem;
   color: var(--color-prim-white);
 }
 
@@ -388,14 +390,14 @@ ul svg {
 }
 .reviews__container img {
   border-radius: 50px;
-  width: 5.5rem;
+  width: 7.5rem;
   border: 2px solid white;
 }
 .rev_title {
   color: var(--color-secondary-blue_rapture);
 }
 .rev_user-name {
-  font-size: 1.5rem!important;
+  font-size: 2.2rem!important;
   color: var(--color-secondary-blue_rapture)!important;
   font-weight: bold;
 
@@ -412,7 +414,7 @@ ul svg {
 .rev__cell-container-2,
 .rev__cell-container-3 {
   margin-bottom: 8rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .svg_rev-1 {
@@ -429,7 +431,7 @@ ul svg {
 
 .cta__container {
   position: relative;
-  height: 35rem;
+  height: 18rem;
   padding: 6rem 8rem;
   background-color: var(--color-prim-coral);
   display: flex;
@@ -469,7 +471,7 @@ ul svg {
 .footer__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.1fr 0.5fr;
   grid-template-areas: 
   "logo"
   "nav"
@@ -536,8 +538,9 @@ ul svg {
 /* 425 */
 @media screen and (min-width: 425px) {
     .hero__title h1 {
-      width: 90%;
+      width: 80%;
       font-size: 5rem;
+      margin: auto;
     }
     .cta__container h1 {
       font-size: 4.2rem;

@@ -1,3 +1,111 @@
 body {
     width: initial;
 }
+.coral {
+    color: var(--color-prim-coral);
+}
+.main_container {
+    background-color: var(--color-prim-green);
+    padding: 2rem 2rem 7rem 2rem;
+}
+.txt_icons-container h1 {
+    color: var(--color-prim-white);
+    padding-top: 5rem;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+    text-align: center;
+}
+.txt_icons-container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main__cell-container {
+    flex-direction: row;
+    margin: auto;
+    flex-direction: row;
+    padding: 2rem 3rem;
+}
+.main__text-cell {
+    margin-left: 1rem;
+}
+
+.main__cell-container p {
+    font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  color: white;
+}
+
+.main__second-col {
+    padding: 6rem 0rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    background-color: var(--color-prim-green);
+}
+
+form input {
+    font-size: 1.3rem;
+    padding: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    rem: ;
+    margin: 1rem;
+    background-color: var(--color-prim-green);
+    font-family: 'Livvic';
+}
+
+form button {
+    font-size: 1.7rem;
+    font-family: 'Livvic';
+    border: none;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* 768 */
+@media screen and (min-width:768px) {
+    .main_container {
+        padding: 2rem 11rem 7rem 11rem;
+        display: inherit;
+    }
+    form {
+        width: inherit;
+    }
+}
+
+/* 1024 */
+@media screen and (min-width: 1024px) {
+    .main_container {
+        padding: 2rem 5rem 5rem 5rem;
+    }
+    .txt_icons-container h1, h3{
+        text-align: left!important;
+        padding-left: 5rem;
+    }
+}
+
+/* 1440 */
+@media screen and (min-width:1440px) {
+    .main_container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+    }
+    form {
+        width: 35%;
+    }
+}

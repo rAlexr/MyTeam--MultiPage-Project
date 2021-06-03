@@ -168,6 +168,9 @@ body {
     .hero__container svg {
         width: 7%;
     }
+    .clients__container {
+        padding: 10rem 3rem;
+    }
 }
 
 /* 1880 */
