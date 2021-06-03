@@ -89,7 +89,7 @@ form button {
 /* 1024 */
 @media screen and (min-width: 1024px) {
     .main_container {
-        padding: 2rem 5rem 5rem 5rem;
+        padding: 2rem 5rem 12.5rem 5rem;
     }
     .txt_icons-container h1, h3{
         text-align: left!important;
