@@ -37,7 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-prim-green);
-  padding: 1rem;
+  padding: 4rem 1.5rem;
   margin-bottom: -.1rem;
 }
 
@@ -80,7 +80,7 @@ body {
 .hero__text p {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 2.7rem;
+  line-height: 3.5rem;
   margin-bottom: 8rem;
 }
 
@@ -168,7 +168,7 @@ body {
 /* MENU STYLES */
 .menu-wrap {
   position: absolute;
-  top: 0;
+  top: 25px;
   right: 0;
   z-index: 1;
 }
@@ -537,7 +537,7 @@ ul svg {
 @media screen and (min-width: 425px) {
     .hero__title h1 {
       width: 90%;
-      font-size: 6rem;
+      font-size: 5rem;
     }
     .cta__container h1 {
       font-size: 4.2rem;
