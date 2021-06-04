@@ -63,7 +63,13 @@ form input {
     background-color: var(--color-prim-green);
     font-family: 'Livvic';
 }
-
+form input:focus {
+    border-bottom: 2px solid var(--color-prim-coral);
+    color: var(--color-prim-coral);
+}
+form input::placeholder {
+    color: var(--color-secondary-blue_rapture);
+}
 form button {
     font-size: 1.7rem;
     font-family: 'Livvic';

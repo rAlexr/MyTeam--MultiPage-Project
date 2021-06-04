@@ -10,15 +10,16 @@ body {
 
 .hero__container svg {
     position: absolute;
-    bottom: -116px;
+    bottom: 2px;
     right: 0px;
-    width: 31%;
+    width: 24%;
+    height: 20%;
 }
 .directors__container {
     display: grid;
     background-color: var(--color-secondary-blue_jungle);
 
-    grid-template-columns: 270px;
+    grid-template-columns: 365px;
     grid-template-rows: repeat(6, minmax(250px, auto-fit));
     align-items: center;
     justify-content: center;
@@ -26,8 +27,10 @@ body {
     row-gap: 3rem;
     column-gap: 3rem;
 
-    padding: 8rem;
+    padding: 8rem 3rem;
+    position: relative;
 }
+
 .directors__container img {
     border-radius: 70px;
     width: 40%;

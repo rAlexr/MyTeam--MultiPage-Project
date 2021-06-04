@@ -30,6 +30,7 @@ body {
 }
 
 .nav__container {
+  margin-bottom: -1px;
   display: none;
 }
 .logo_burger-container {
@@ -110,7 +111,7 @@ body {
 .main__title svg {
     width: 24%;
     position: absolute;
-    top: 0;
+    top: -60px;
     right: -2rem;
 }
 
@@ -431,7 +432,7 @@ ul svg {
 
 .cta__container {
   position: relative;
-  height: 18rem;
+  height: 35rem;
   padding: 6rem 8rem;
   background-color: var(--color-prim-coral);
   display: flex;
@@ -565,7 +566,7 @@ ul svg {
   .nav__logo-txt-container a {
     margin-left: 2rem;
     padding: 1rem 3rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: 'Livvic', sans-serif;
     font-weight: 600;
     color: var(--color-prim-white);
