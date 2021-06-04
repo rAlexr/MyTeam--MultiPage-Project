@@ -6,15 +6,15 @@ Aim of this project is to coppy 1/1 the design, and build with HTML/CSS/JS.
 
 So I will resume here what I learned form this one :
 
-This one was a real challenge because I implemented all things I learnd from tutorials and courses, at the begining was hard but in the end I nail it!
+This one was a real challenge because I implemented all things I learned from tutorials and courses, at the begining was hard but in the end I nail it!
 
 I learned how important is a solid HTML structure and how to build a responsive layout, combine Grid and Flex.
 
-I still have some issues with implementing some elements.
+I still have some issues with implementing some elements and control SVG's.
 
 **Summary**
 
-- DRY, better HTML/Layout structure !, responsive behavior.
+- DRY. better HTML/Layout structure. responsive behavior.
 
 **First project without any help**
 
