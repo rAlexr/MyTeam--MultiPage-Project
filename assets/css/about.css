@@ -47,6 +47,46 @@ body {
 
     padding: 3rem;
 }
+.cell__visibile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell__invisible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cell__quote {
+    font-family: 'Livvic';
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+}
+
+.social__cell {
+    display: flex;
+    justify-content: space-between;
+    width: 65px;
+    margin-top: 1rem;
+    
+}
+
+.disp__non {
+    display: none;
+}
+
+.social__cell svg {
+    fill: #fff;
+}
+
+.social__cell a svg:hover {
+    fill: var(--color-prim-coral);
+}
 
 .avatar__cell i {
     padding: 1rem;
