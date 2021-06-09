@@ -7,6 +7,7 @@ cell.addEventListener('click', e => {
     if(e.target.tagName === 'I') {
         if(!visibil.classList.contains('disp__non')) {
             const parinte = e.target.parentElement;
+            console.log(parinte);
             let firstChild = parinte.children[0];
             let secondChild = parinte.children[1];
 
@@ -19,9 +20,8 @@ cell.addEventListener('click', e => {
             console.log('are')
 
         }else{
-            visibil.classList.remove('disp__non')
-            invisibil.classList.add('disp__non')
-            console.log('nu are, dar sar putea sa aiaba')
+            visibil.classList.remove('disp__non');
+            invisibil.classList.add('disp__non');
         }
     }
 });
