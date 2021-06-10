@@ -25,4 +25,3 @@ cell.addEventListener('click', e => {
         })
     }
 });
-
