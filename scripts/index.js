@@ -12,7 +12,6 @@ cell.addEventListener('click', e => {
         console.log(copii)
         //verific la primu child daca are clasa de visibil, daca o are ii pun none
         Array.from(copii).forEach((temp) => {
-            
             if(temp.tagName === 'DIV') {
               console.log('elementul savlat in temp este', temp)  
               //la al doi-lea child fac acelas lucru, doar ca opus
